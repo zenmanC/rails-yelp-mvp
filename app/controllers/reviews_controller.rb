@@ -17,7 +17,6 @@ class ReviewsController < ApplicationController
     @review = Review.new(review_params)
     @review.restaurant = Restaurant.find(params[:restaurant_id])
     @review.save
-    # redirect_to reviews_path(@review)
   end
 
 private
